@@ -92,6 +92,7 @@ Utilização
   - Http Response 400 (Bad request) : <br />
         - Algum campo não passou na validação, podendo estar vazio, o json enviado não segue o padrão.
   - JSON return: <br />
+  <code>
         {
           "_status": "ERR",
           "_error": {
@@ -99,6 +100,7 @@ Utilização
             "code": 400
           }
         }
+  </code>
   - Http Response 422 (Unprocessable Entity) : <br />
         - Algum campo não segue o tipo pré determinado à ele, campo será informado no retorno.
   - JSON return: <br />
