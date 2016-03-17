@@ -30,6 +30,7 @@ Utilização
  Ex.:<br /> POST http//localhost:5000/maps
 
     Content:<br />
+    <code>
     {
         "title":<br />"testemaps",
         "routes":<br />[
@@ -65,6 +66,7 @@ Utilização
             }
         ]
     }
+    </code>
 
     Descrição dos campos:<br />
         - origin :<br /> string
