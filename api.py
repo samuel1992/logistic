@@ -37,8 +37,8 @@ def getCollection():
     try:
         map = collection.find_one({'title':mapName})
     except:
-        response = jsonify({'response':'The passed map does not exists or is blank'})
-        response.status_code = 400
+        response = jsonify({'response':'Application could not use the DB especifield'})
+        response.status_code = 500
         return response
     
     # Fazendo a iteração para preencher uma lista
