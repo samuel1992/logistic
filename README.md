@@ -6,12 +6,12 @@ Descrição
 Sistema para calcular uma malha logística. Basicamente o sistema deve ser capaz de receber duas rotas (ponto de partida e de chegada) e a partir dessas informações calcular qual seria a melhor rota em termos de custo (gasolina por KM percorrido).
 Uma malha logística segue o seguinte formato : 
 
-A B 10\n
-B D 15
-A C 20
-C D 30
-B E 50
-D E 30
+		A B 10
+		B D 15
+		A C 20
+		C D 30
+		B E 50
+		D E 30
 
 Onde a primeira coluna é o ponto de partida, a segunda o pontode chegada e a terceira representa o total de KM entre um e outro.
 
