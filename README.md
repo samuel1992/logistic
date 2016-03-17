@@ -96,11 +96,13 @@ Utilização
   - <u>JSON return: </u><br />
     ```
         {
+        
           "_status": "ERR",
           "_error": {
             "message": "The browser (or proxy) sent a request that this server could not understand.",
             "code": 400
           }
+          
         }
     ```
   - <u>Http Response 422 (Unprocessable Entity) :</u> <br />
