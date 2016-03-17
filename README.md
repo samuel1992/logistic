@@ -72,7 +72,7 @@ Utilização
         - distance : float
 
   Retornos:
-  - Http Response 201 (Created) : <br />
+  -<s> Http Response 201 (Created)</s> : <br />
         - A malha foi criada com sucesso.
   - JSON return: <br />
     <code>
@@ -282,4 +282,13 @@ Motivação para o uso das tecnologias:
   - EVE : <br />
         O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido.
 
+        
+        
+            
+    
+        
+    
+        
+        
 
+    
