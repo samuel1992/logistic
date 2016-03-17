@@ -40,6 +40,7 @@ def getCollection():
         response = jsonify({'response':'Application could not use the DB especifield'})
         response.status_code = 500
         return response
+
     
     # Fazendo a iteração para preencher uma lista
     # de vertex que serão usado na lib Graph()
