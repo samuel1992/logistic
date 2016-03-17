@@ -75,7 +75,7 @@ Utilização
   - <u> Http Response 201 (Created) :</u><br />
         - A malha foi criada com sucesso.
   - <u> JSON return: </u><br />
-    ```
+    ``` 
          {
           "_updated": "Thu, 17 Mar 2016 03:13:58 GMT",
           "_links": {
@@ -96,13 +96,13 @@ Utilização
   - <u>JSON return: </u><br />
     ```
         {
-        
+
           "_status": "ERR",
           "_error": {
             "message": "The browser (or proxy) sent a request that this server could not understand.",
             "code": 400
           }
-          
+
         }
     ```
   - <u>Http Response 422 (Unprocessable Entity) :</u> <br />
@@ -110,6 +110,7 @@ Utilização
   - <u>JSON return:</u> <br />
     ```
         {
+
           "_status": "ERR",
           "_issues": {
             "routes": {
@@ -122,6 +123,7 @@ Utilização
             "message": "Insertion failure: 1 document(s) contain(s) error(s)",
             "code": 422
           }
+
         }
     ```
   - <u>Http Response 500 (Internal Server Error) :</u> <br />
