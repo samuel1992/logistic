@@ -72,9 +72,9 @@ Utilização
         - distance : float
 
   Retornos:
-  - Http Response 201 (Created) :
+  - Http Response 201 (Created) : <br />
         - A malha foi criada com sucesso.
-  - JSON return:
+  - JSON return: <br />
          {
           "_updated": "Thu, 17 Mar 2016 03:13:58 GMT",
           "_links": {
@@ -89,9 +89,9 @@ Utilização
           "_etag": "25a2714cd56af423e7e9ee0d42a52ae9935f7efa"
         }
         
-  - Http Response 400 (Bad request) :
+  - Http Response 400 (Bad request) : <br />
         - Algum campo não passou na validação, podendo estar vazio, o json enviado não segue o padrão.
-  - JSON return:
+  - JSON return: <br />
         {
           "_status": "ERR",
           "_error": {
@@ -99,9 +99,9 @@ Utilização
             "code": 400
           }
         }
-  - Http Response 422 (Unprocessable Entity) :
+  - Http Response 422 (Unprocessable Entity) : <br />
         - Algum campo não segue o tipo pré determinado à ele, campo será informado no retorno.
-  - JSON return:
+  - JSON return: <br />
         {
           "_status": "ERR",
           "_issues": {
@@ -116,9 +116,9 @@ Utilização
             "code": 422
           }
         }
-  - Http Response 500 (Internal Server Error) : 
+  - Http Response 500 (Internal Server Error) : <br />
         - Problema de comunicação entre as partes internas da aplicação.
-  - HTML return:
+  - HTML return: <br />
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <title>500 Internal Server Error</title>
         <h1>Internal Server Error</h1>
@@ -238,14 +238,14 @@ Utilização
           "_etag": "c89227a0d84f96525361c5a9bd0404689a7a1b50"
         }
 
-  - Http Response 200 (OK) :
+  - Http Response 200 (OK) : <br />
         - Retornou o mapa com sucesso.
-  - JSON return:
+  - JSON return: <br />
         - O conteudo do mapa mais alguns parametros para controle da api. (Ex acima)
     
-  - Http Response 404 (Not Found):
+  - Http Response 404 (Not Found): <br />
         - Não foi encontrado o mapa requisitado. O id é inválido ou existe algo errado na URL.
-  - JSON return:
+  - JSON return: <br />
         {
           "_status": "ERR",
           "_error": {
@@ -254,9 +254,9 @@ Utilização
           }
         }
     
-  - Http Response 500 (Internal Server Error) :
+  - Http Response 500 (Internal Server Error) : <br />
         - Problema de comunicação entre as partes internas da aplicação.
-  - HTML return:
+  - HTML return: <br />
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <title>500 Internal Server Error</title>
         <h1>Internal Server Error</h1>
@@ -264,8 +264,9 @@ Utilização
 
 Motivação para o uso das tecnologias:
 ====================================
-  - MongoDB :
+  - MongoDB : <br />
         O mongoDb além de facilitar todo o armazenamento dos dados nesse tipo de aplicação, também, é utilizado pelo EVE que também foi utilizado aqui nessa aplicação. 
         Também cogitei usar o Neo4J que é um banco de dados especializado em grafos e facilitaria os calculos das malhas de rotas, porém, não tenho tanto conhecimento nessa tecnologia e foi escolhido manter a maior estabilidade.
-  - EVE :
+  - EVE : <br />
         O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido.
+
