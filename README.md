@@ -75,7 +75,7 @@ Utilização
   - <u> Http Response 201 (Created) :</u><br />
         - A malha foi criada com sucesso.
   - <u> JSON return: </u><br />
-    <code>
+    ```
          {
           "_updated": "Thu, 17 Mar 2016 03:13:58 GMT",
           "_links": {
@@ -89,12 +89,12 @@ Utilização
           "_id": "56ea20f6e1382324a7744c59",
           "_etag": "25a2714cd56af423e7e9ee0d42a52ae9935f7efa"
         }
-    </code>
+    ```
         
   - <u> Http Response 400 (Bad request) :</u> <br />
         - Algum campo não passou na validação, podendo estar vazio, o json enviado não segue o padrão.
   - <u>JSON return: </u><br />
-    <code>
+    ```
         {
           "_status": "ERR",
           "_error": {
@@ -102,11 +102,11 @@ Utilização
             "code": 400
           }
         }
-    </code>
+    ```
   - <u>Http Response 422 (Unprocessable Entity) :</u> <br />
         - Algum campo não segue o tipo pré determinado à ele, campo será informado no retorno.
   - <u>JSON return:</u> <br />
-    <code>
+    ```
         {
           "_status": "ERR",
           "_issues": {
@@ -121,16 +121,16 @@ Utilização
             "code": 422
           }
         }
-    </code>
+    ```
   - <u>Http Response 500 (Internal Server Error) :</u> <br />
         - Problema de comunicação entre as partes internas da aplicação.
   - <u>HTML return: </u><br />
-    <code>
+    ```
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <title>500 Internal Server Error</title>
         <h1>Internal Server Error</h1>
         <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
-    </code>
+    ```
 
 ### Requisitar todos maps existentes.
 
@@ -254,7 +254,7 @@ Utilização
   - <u>Http Response 404 (Not Found):</u> <br />
         - Não foi encontrado o mapa requisitado. O id é inválido ou existe algo errado na URL.
   - <u>JSON return :</u> <br />
-    <code>
+    ```
         {
           "_status": "ERR",
           "_error": {
@@ -262,7 +262,7 @@ Utilização
             "code": 404
           }
         }
-    </code>
+    ```
     
   - <u>Http Response 500 (Internal Server Error) :</u> <br />
         - Problema de comunicação entre as partes internas da aplicação.
