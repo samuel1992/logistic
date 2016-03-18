@@ -167,6 +167,12 @@ Utilização
         }
 
     ```
+    Descrição dos campos: <br />
+        -  map (string) : Titulo do mapa a ser usado como base <br />
+        -  origin (string) : Ponto de origem/partida <br />
+        -  destiny (string) : Printo de destino/chegada <br />
+        -  price (float) : Preço da gasolina por litro <br />
+        -  autonomy (float) : Autonomia do automóvel em KMs por litro de gasolina <br />
     
   - <u>Http Response 400 (Bad Request) :</u> <br />
         - Algum dos parâmetros passados é inválido. Ele será informado no retorno json.
