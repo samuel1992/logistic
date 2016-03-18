@@ -22,7 +22,7 @@ Instalação
         - Eve <br />
 		- PyMongo <br />
         - Python 2.7 <br />
-  - Instalacao : 
+  - Instalacao : <br />
         = Toda instalação foi feita no sistema Fedora Linux release 23 =
         - Instalar o python : sudo dnf install python 
         - Instalar o pip : sudo dnf install python-pip
