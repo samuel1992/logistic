@@ -22,7 +22,12 @@ Instalação
         - Eve <br />
 		- PyMongo <br />
         - Python 2.7 <br />
-
+  - Instalacao : 
+        - Instalar o python : sudo dnf install python (Fedora Linux release 23)
+        - Primeiro instalar o mongoDB em sua máquina (feito o deploy em Fedora Linux release 23).
+        - Iniciar o daemon do mongoDB : sudo service mongod start
+        - No diretório do projeto executat "pip install -r requirements.pip" (isso resolverá as dependencias)'
+        - Rodar a api : python api.py
 Utilização
 ==========
 ### Inserção de um novo mapa de malha logistica.
@@ -173,8 +178,8 @@ Utilização
         {
           "response": "Application could not use the DB especifield"
         }
-    ```
  
+    ```
 ### Requisitar todos maps existentes.
 
  Ex.: GET http://localhost:5000/maps
