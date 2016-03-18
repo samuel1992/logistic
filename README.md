@@ -23,13 +23,13 @@ Instalação
 		- PyMongo <br />
         - Python 2.7 <br />
   - Instalacao : <br />
-        = Toda instalação foi feita no sistema Fedora Linux release 23 =
-        - Instalar o python : sudo dnf install python 
-        - Instalar o pip : sudo dnf install python-pip
-        - Instalar o mongoDB  : (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat/)
-        - Iniciar o daemon do mongoDB : sudo service mongod start
-        - No diretório do projeto executat "pip install -r requirements.pip" (isso resolverá as dependencias para o python)
-        - Rodar a api : python api.py
+        = Toda instalação foi feita no sistema Fedora Linux release 23 = <br />
+        - Instalar o python : sudo dnf install python <br />
+        - Instalar o pip : sudo dnf install python-pip <br />
+        - Instalar o mongoDB  : (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat/) <br />
+        - Iniciar o daemon do mongoDB : sudo service mongod start <br />
+        - No diretório do projeto executat "pip install -r requirements.pip" (isso resolverá as dependencias para o python) <br />
+        - Rodar a api : python api.py <br />
 Utilização
 ==========
 ### Inserção de um novo mapa de malha logistica.
