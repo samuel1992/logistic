@@ -18,10 +18,10 @@ Onde a primeira coluna é o ponto de partida, a segunda o pontode chegada e a te
 Instalação
 ==========
   - Pré-requsitos: <br />
+   	- Python 2.7 <br />
         - MongoDB <br />
         - Eve <br />
         - PyMongo <br />
-	- Python 2.7 <br />
 
   - Instalacao : <br />
         = Toda instalação foi feita no sistema Fedora Linux release 23 = <br />
