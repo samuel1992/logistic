@@ -23,10 +23,12 @@ Instalação
 		- PyMongo <br />
         - Python 2.7 <br />
   - Instalacao : 
-        - Instalar o python : sudo dnf install python (Fedora Linux release 23)
-        - Primeiro instalar o mongoDB em sua máquina (feito o deploy em Fedora Linux release 23).
+        = Toda instalação foi feita no sistema Fedora Linux release 23 =
+        - Instalar o python : sudo dnf install python 
+        - Instalar o pip : sudo dnf install python-pip
+        - Instalar o mongoDB  : (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat/)
         - Iniciar o daemon do mongoDB : sudo service mongod start
-        - No diretório do projeto executat "pip install -r requirements.pip" (isso resolverá as dependencias)'
+        - No diretório do projeto executat "pip install -r requirements.pip" (isso resolverá as dependencias para o python)
         - Rodar a api : python api.py
 Utilização
 ==========
