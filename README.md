@@ -144,7 +144,7 @@ Utilização
         <h1>Internal Server Error</h1>
         <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
     ```
-### Requisitar um caminho (shortest path)
+### Requisitar o melhor caminho (shortest path)
   
  Ex.: GET http://localhost:5000/maps/shortest?map=mapaPrincipal&origin=A&destiny=D&price=2.50&autonomy=10
 
@@ -332,6 +332,12 @@ Motivação para o uso das tecnologias:
         O mongoDb além de facilitar todo o armazenamento dos dados nesse tipo de aplicação, também, é utilizado pelo EVE que também foi utilizado aqui nessa aplicação. 
         Também cogitei usar o Neo4J que é um banco de dados especializado em grafos e facilitaria os calculos das malhas de rotas, porém, não tenho tanto conhecimento nessa tecnologia e foi escolhido manter a maior estabilidade.
   - <u>EVE :</u> <br />
-        O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido.
+        O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido. Assim facilitando para receber um documento Json e armazenar em minha collection de forma simples e descomplicada.
+  - <u>Dijkstra :</u> <br />
+	Fiz uso do algoritmo de dijkstra para poder calcular o menor caminho entre dois vertices, após alguns teste e pesquisas acabei seguindo como base, principalmente, dois artigos : 
+	http://interactivepython.org/runestone/static/pythonds/Graphs/DijkstrasAlgorithm.html
+	http://www.bogotobogo.com/python/python_Dijkstras_Shortest_Path_Algorithm.php
+	Então fica aqui meus créditos aos autores.
+	
 
 
