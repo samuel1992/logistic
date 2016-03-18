@@ -147,10 +147,8 @@ Utilização
 ### Requisitar o melhor caminho (shortest path)
   
  Ex.: GET http://localhost:5000/maps/shortest?map=mapaPrincipal&origin=A&destiny=D&price=2.50&autonomy=10
-
-  - <u>Http Response 200 (Ok) :</u><br />
-   	- Encontrado e retornado o menor caminho com sucesso.
-  - <u>Json return :</u> <br />
+ 
+    Content:
     ```
         {
 
