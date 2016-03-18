@@ -20,7 +20,7 @@ Instalação
   - Pré-requsitos: <br />
         - MongoDB <br />
         - Eve <br />
-		- PyMongo <br />
+	- PyMongo <br />
         - Python 2.7 <br />
   - Instalacao : <br />
         = Toda instalação foi feita no sistema Fedora Linux release 23 = <br />
@@ -165,7 +165,9 @@ Utilização
           ]
 
         }
+
     ```
+    
   - <u>Http Response 400 (Bad Request) :</u> <br />
         - Algum dos parâmetros passados é inválido. Ele será informado no retorno json.
   - <u>Json return :</u> <br />
