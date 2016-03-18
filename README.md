@@ -144,6 +144,45 @@ Utilização
         <h1>Internal Server Error</h1>
         <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
     ```
+### Requisitar um caminho (shortest path)
+  
+ Ex.: GET http://localhost:5000/maps/shortest?map=mapaPrincipal&origin=A&destiny=D&price=2.50&autonomy=10
+
+    Content:
+    ```
+        {
+
+          "data": [
+            {
+              "Path": "['A', 'B', 'D']"
+            },
+            {
+              "Total KM": "25.00"
+            },
+            {
+              "Cost": "6.25"
+            }
+          ]
+
+        }
+    ```
+    <u>Http Response 400 (Bad Request) :</u> <br />
+        - Algum dos parâmetros passados é inválido. Ele será informado no retorno json.
+    <u>Json return :</u> <br />
+    ```
+        {
+          "response": "The parameter destiny does not contain on map mapaPrincipal"
+        }
+    ```
+
+    <u>Http Response 500 (Internal Server Error) :></u> <br />
+        - Problema de comunicação entre as partes internas da aplicação.
+    <u>Json return :</u> <br />
+    ```
+        {
+          "response": "Application could not use the DB especifield"
+        }
+    ```
 
 ### Requisitar todos maps existentes.
 
