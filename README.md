@@ -343,7 +343,7 @@ Motivação para o uso das tecnologias:
   - <u>EVE :</u> <br />
         O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido. Assim facilitando para receber um documento Json e armazenar em minha collection de forma simples e descomplicada.
   - <u>Dijkstra :</u> <br />
-	Fiz uso do algoritmo de dijkstra para poder calcular o menor caminho entre dois vertices, após alguns teste e pesquisas acabei seguindo como base, principalmente, dois artigos : 
+	Fiz uso do algoritmo de dijkstra para poder calcular o menor caminho entre dois vertices, após alguns testes e pesquisas acabei seguindo como base, principalmente, dois artigos : 
 	http://interactivepython.org/runestone/static/pythonds/Graphs/DijkstrasAlgorithm.html
 	http://www.bogotobogo.com/python/python_Dijkstras_Shortest_Path_Algorithm.php
 	Então fica aqui meus créditos aos autores.
