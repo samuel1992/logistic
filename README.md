@@ -101,7 +101,7 @@ Utilização
     ```
         
   - <u> Http Response 400 (Bad request) :</u> <br />
-        - Algum campo não passou na validação, podendo estar vazio, o json enviado não segue o padrão.
+        - Algum campo não passou na validação, podendo estar vazio, o json enviado não segue o padrão etc.
   - <u>JSON return: </u><br />
     ```
         {
