@@ -142,46 +142,7 @@ Utilização
         <h1>Internal Server Error</h1>
         <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
     ```
-### Requisitar um caminho (shortest path)
 
- Ex.: GET http://localhost:5000/maps/shortest?map=mapaPrincipal&origin=A&destiny=D&price=2.50&autonomy=10
-
-    Content:
-    ```
-        {
-
-          "data": [
-            {
-              "Path": "['A', 'B', 'D']"
-            },
-            {
-              "Total KM": "25.00"
-            },
-            {
-              "Cost": "6.25"
-            }
-          ]
-
-        }
-    ```
-    <u>Http Response 400 (Bad Request) :</u> <br />
-        - Algum dos parâmetros passados é inválido. Ele será informado no retorno json.
-    <u>Json return :</u> <br />
-    ```
-        {
-          "response": "The parameter destiny does not contain on map mapaPrincipal"
-        }
-    ```
-
-    <u>Http Response 500 (Internal Server Error) :></u> <br />
-        - Problema de comunicação entre as partes internas da aplicação.
-    <u>Json return :</u> <br />
-    ```
-        {
-          "response": "Application could not use the DB especifield"
-        }
- 
-    ```
 ### Requisitar todos maps existentes.
 
  Ex.: GET http://localhost:5000/maps
@@ -257,33 +218,6 @@ Utilização
       }
     }
 
-  - <u>Http Response 200 (OK) :</u> <br />
-        - Retornou os mapas com sucesso.
-  - <u>JSON return :</u> <br />
-        - O conteudo do mapa mais alguns parametros para controle da api. (Ex acima)
-    
-  - <u>Http Response 404 (Not Found):</u> <br />
-        - Não foi encontrado o mapa requisitado. O id é inválido ou existe algo errado na URL.
-  - <u>JSON return :</u> <br />
-    ```
-        {
-          "_status": "ERR",
-          "_error": {
-            "message": "The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.",
-            "code": 404
-          }
-        }
-    ```
-    
-  - <u>Http Response 500 (Internal Server Error) :</u> <br />
-        - Problema de comunicação entre as partes internas da aplicação.
-  - <u>HTML return :</u> <br />
-    ```
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-        <title>500 Internal Server Error</title>
-        <h1>Internal Server Error</h1>
-        <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
-
 ### Requisitar um mapa especifico.
 
  Ex.: GET http://localhost:5000/maps/56ea26d5e138232ef1ae4f63 ou http://localhost:5000/maps/testemaps1
@@ -358,3 +292,5 @@ Motivação para o uso das tecnologias:
         Também cogitei usar o Neo4J que é um banco de dados especializado em grafos e facilitaria os calculos das malhas de rotas, porém, não tenho tanto conhecimento nessa tecnologia e foi escolhido manter a maior estabilidade.
   - <u>EVE :</u> <br />
         O microFramework eve constroi por si só toda a estrutura dos responses da API apenas em base do modelo que é definido para o banco de dados mongoDb. Além de controlar os IDs e definir links de acesso para cada item inserido.
+
+
