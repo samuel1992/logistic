@@ -75,10 +75,10 @@ Utilização
     }
     ```
 
-    Descrição dos campos:
-        - origin : string
-        - destiny : string
-        - distance : float
+    Descrição dos campos: <br />
+        - origin : string <br />
+        - destiny : string <br />
+        - distance : float <br />
 
   Retornos:
   - <u> Http Response 201 (Created) :</u><br />
