@@ -19,9 +19,9 @@ Instalação
 ==========
   - Pré-requsitos: <br />
    	- Python 2.7 <br />
-        - MongoDB <br />
-        - Eve <br />
-        - PyMongo <br />
+   	- MongoDB <br />
+   	- Eve Framework <br />
+   	- PyMongo <br />
 
   - Instalacao : <br />
         = Toda instalação foi feita no sistema Fedora Linux release 23 = <br />
