@@ -175,9 +175,10 @@ Utilização
         }
     ```
 
-    <u>Http Response 500 (Internal Server Error) :></u> <br />
+    - <u>Http Response 500 (Internal Server Error) :></u> <br />
         - Problema de comunicação entre as partes internas da aplicação.
-    <u>Json return :</u> <br />
+        
+    - <u>Json return :</u> <br />
     ```
         {
           "response": "Application could not use the DB especifield"
