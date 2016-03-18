@@ -148,7 +148,9 @@ Utilização
   
  Ex.: GET http://localhost:5000/maps/shortest?map=mapaPrincipal&origin=A&destiny=D&price=2.50&autonomy=10
 
-    Content:
+  - <u>Http Response 200 (Ok) :</u><br />
+  	- Encontrado e retornado o menor caminho com sucesso.
+  - <u>Json return :</u> <br />
     ```
         {
 
@@ -166,19 +168,19 @@ Utilização
 
         }
     ```
-    <u>Http Response 400 (Bad Request) :</u> <br />
+  - <u>Http Response 400 (Bad Request) :</u> <br />
         - Algum dos parâmetros passados é inválido. Ele será informado no retorno json.
-    <u>Json return :</u> <br />
+  - <u>Json return :</u> <br />
     ```
         {
           "response": "The parameter destiny does not contain on map mapaPrincipal"
         }
     ```
 
-    - <u>Http Response 500 (Internal Server Error) :></u> <br />
+   - <u>Http Response 500 (Internal Server Error) :></u> <br />
         - Problema de comunicação entre as partes internas da aplicação.
         
-    - <u>Json return :</u> <br />
+   - <u>Json return :</u> <br />
     ```
         {
           "response": "Application could not use the DB especifield"
